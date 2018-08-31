@@ -9,5 +9,5 @@ then
 fi
 
 DATADIR=$(cat chain.lock)
-
-./Applications/Mist.app/Contents/MacOS/Mist  ./${DATADIR}/geth.ipc
+echo "DATADIR:"$DATADIR
+/Applications/Mist.app/Contents/MacOS/Mist  --rpc ./${DATADIR}/geth.ipc
